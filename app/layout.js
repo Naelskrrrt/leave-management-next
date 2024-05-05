@@ -6,6 +6,7 @@ import SideNav from "@/components/side-nav";
 import PageWrapper from "@/components/page-wrapper";
 import MarginWidthWrapper from "@/components/margin-width-wrapper";
 import { ThemeProvider } from "@/components/theme.provider";
+import { Toaster } from "@/components/ui/sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
             </main>
           </div>
         </ThemeProvider>
+        <Toaster />
       </body>
     </html>
   );
